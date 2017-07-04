@@ -3,7 +3,12 @@ body{
 	font-family: "Roboto", "Arial",  sans-serif;
 	font-size: 14px;
 	line-height: 16px;
+	margin-top: 0;
+}
+.wrapper{
+	width: 1200px;
 	margin: 0 auto;
+	background-color: #eeeeee;
 }
 .container {
 	width:880px;
@@ -11,7 +16,7 @@ body{
 }
 
 .index-contacts {
-	max-width:1200px;
+	width:1200px;
 	margin: 0 auto; 
 }
 .logo{
@@ -20,8 +25,7 @@ body{
 	padding-top: 30px;
 }
 nav{
-	display: inline-block;
-	min-width: 400px;
+	
 }
 nav li{
 	display: inline-block;
@@ -55,8 +59,11 @@ header{
 	color: #a6a6a6;
 }
 .main-navigation ul{
+	display: inline-block;
+	width: 440px;
 	font-size: 0;
-	padding-left: 185px;
+	margin-left: 185px;
+	padding-left: 0;
 }
 .main-navigation{
 	float:left;
@@ -83,7 +90,7 @@ a{
 	color: #8f8f8f;
 }
 .slide {
-	background-color: #EEEEEE;
+	background-color: #eeeeee;
 	width: 880px;
 	position: absolute;
 	top: 0;
@@ -131,8 +138,6 @@ a{
 	z-index: 100;
 	transition: left .65s ease-out;
 }
-
-
 .slider-checks{
 	position: absolute;
 	position: center;
