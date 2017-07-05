@@ -10,6 +10,10 @@ body{
 	margin: 0 auto;
 	background-color: #eeeeee;
 }
+.wrapp{
+	width: 1200px;
+	margin: 0 auto;
+}
 .container {
 	width:880px;
 	margin: 0 auto;
@@ -111,7 +115,10 @@ a{
 	margin-right: 0;
 	padding-right: 0;
 }
+.carousell h2{
+	margin-top: 0;
 
+}
 .slide3 img{
 	margin-top: 20px;
 } 
@@ -157,6 +164,29 @@ a{
 	margin-right: 15px;
 	font-size: 0; 
 	}
+	.carousell-button{
+	background-color: #fb565a;
+	font-size: 12px;
+	font-weight: 700;
+	text-transform:uppercase;
+	color: #ffffff;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	padding-left: 70px;
+	padding-right: 70px;
+	border-radius: 5px;
+	top:230px;
+	left:0px;
+	z-index: 2000;
+	position: absolute;
+	}
+.carousell-button:hover{
+	background-color: #d6494d;
+}
+.carousell-button:active{
+	background-color: #b63538;
+	box-shadow: inset 0px 4px 0px 0px rgba(50, 50, 50, 0.41);
+}
 input[type="radio"], input[type="checkbox"]{
 	display: none;
 }
