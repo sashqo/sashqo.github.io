@@ -93,16 +93,7 @@ a{
 .main-navigation a:active{
 	color: #8f8f8f;
 }
-.slide {
-	background-color: #eeeeee;
-	width: 880px;
-	position: absolute;
-	top: 0;
-	left: 100%;
-	z-index: 10;
-	transition: left 0s .75s;
-	height: 350px;
-}
+
 .carousell{
 	position: relative;
 	height: 350px;
@@ -140,30 +131,19 @@ a{
 	color: #283136;
 }
 
-[id^='slide']:checked + .slide {
-	left: 0;
-	z-index: 100;
-	transition: left .65s ease-out;
-}
-.slider-checks{
-	position: absolute;
-	position: center;
-}
-.slider-list {
-	margin: 0;
-	padding:0;
-	position: absolute;
-	bottom: 23%;
-	left: 46%;
 
-	z-index: 900;
-	width: 100%;
+
+.slide {
+	background-color: #eeeeee;
+	width: 880px;
+	position: absolute;
+	top: 0;
+	left: 100%;
+	z-index: 10;
+	transition: left 0s .75s;
+	height: 350px;
 }
-.slider-list li{
-	display: inline-block;
-	margin-right: 15px;
-	font-size: 0; 
-	}
+
 	.carousell-button{
 	background-color: #fb565a;
 	font-size: 12px;
@@ -187,29 +167,80 @@ a{
 	background-color: #b63538;
 	box-shadow: inset 0px 4px 0px 0px rgba(50, 50, 50, 0.41);
 }
-input[type="radio"], input[type="checkbox"]{
-	display: none;
+
+#slides {
+background-color: #eeeeee;
+	width: 880px;
+	position: absolute
+height: 350px;
+}
+.inner {width: 500%;}
+.inner:after {
+	content:'';
+	display: block;
+	height: 0;
+	clear:both;
+	}
+.page {float: left; width: 20%;}
+.page img {float: right;
+	margin-top: 70px;
+	margin-right: 0;
+	padding-right: 0;}
+
+#overflow {overflow: hidden;}
+#slider input {display: none;}
+
+#controls {
+position: absolute;
+width:100%;
+top: 120px;
+left: 0;
+height: 50px;
 }
 
-input[type="radio"] + label{
-	display: inline-block;
-	vertical-align: top;
-	cursor: pointer;
-	position: relative;
+#controls label {
+display: none;
+opacity: 0.3;
+cursor: pointer;
 }
-input[type="radio"] + label::before{
+#controls label:hover {
+opacity: 0.8;
+}
+													/* перелистывание фотографий */	
+
+
+#slide1:checked ~ #slides .inner { margin-left:0;} 
+#slide2:checked ~ #slides .inner { margin-left:-100%;} 
+#slide3:checked ~ #slides .inner { margin-left:-200%;} 
+#slide4:checked ~ #slides .inner { margin-left:-300%;} 
+#slide5:checked ~ #slides .inner { margin-left:-400%;} 
+
+/*точки для перелистывания*/
+#active {
+	margin: 0;
+	padding:0;
+	position: absolute;
+	bottom: 26%;
+	left: 46%;
+	z-index: 900;
+	width: 100%;
+}
+#active label{	
 	content: "";
 	display: inline-block;
 	width: 10px;
 	height: 10px;
 	background-color: white;
-	position: absolute;	
 	left: 0;
-	border-radius: 50%;
+	border-radius: 50%;	
+	position: relative;
+	margin-right: 5px;
 }
-input[type="radio"]:checked + label::after{
+
+#slide1:checked ~ #active label:nth-child(1):after
+{
 	content: "";
-    display: block;
+    display: inline-block;
     width: 4px;
     height: 4px;  
     background: #c1c1c1;
@@ -217,6 +248,39 @@ input[type="radio"]:checked + label::after{
     border-radius: 50%;
     top:3px;
     left: 3px;
+
+}
+#slide2:checked ~ #active label:nth-child(2):after
+{
+content: "";
+    display: inline-block;
+    width: 4px;
+    height: 4px;  
+    background: #c1c1c1;
+    position: absolute;
+    border-radius: 50%;
+    top:3px;
+    left: 3px;
+}
+#slide3:checked ~ #active label:nth-child(3):after
+{ 	
+	content: "";
+    display: inline-block;
+    width: 4px;
+    height: 4px;  
+    background: #c1c1c1;
+    position: absolute;
+    border-radius: 50%;
+    top:3px;
+    left: 3px;
+}
+
+#slides .inner {
+transition: all 0.8s ease-in-out;
+-webkit-transition: all 0.8s ease-in-out;
+-moz-transition: all 0.8s ease-in-out;
+-ms-transition: all 0.8s ease-in-out;
+-o-transition: all 0.8s ease-in-out;
 }
 
 

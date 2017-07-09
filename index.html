@@ -34,42 +34,50 @@
 </header>
 
 <div class=" container clearfix carousell"> 
- <ul class="slider-list">
-      <li><input name="product-group-radio" type="radio" id="radio1" checked><label for="slide-1"></label> 
-      </li>
-      <li><input name="product-group-radio" type="radio" id="radio2"><label for="slide-2"></label> 
-      </li>
-      <li><input name="product-group-radio" type="radio" id="radio3"><label for="slide-3"></label>
-      </li>       
-    </ul>   	
-    <a href="#" class="carousell-button">Узнать больше</a>  
-    <input id="slide-1" type="radio" name="slides" checked>
-    <section class="slide slide-one">
-    <img class="carousell-img" src="img\slide-img1.png">
-<h2 class="slide-header">Долго, дорого,<br> 
-    скрупулезно.</h2>
-    <p class="slide-description">Математически выверенный дизайн<br> 
-    для вашего сайта или мобильного приложения.</p>
-     </section>
-    <input id="slide-2" type="radio" name="slides">
-    <section class="slide slide-two">
-    	<img class="carousell-img" src="img\slide-img2.png">
-<h2 class="slide-header">Любите ли вы математику,<br>
-как любим ее мы?</h2>
-    <p class="slide-description">Нашим дизайнерам мы удаляем нейроны, ответственные<br>
-за креатив, чтобы дать им возможность все просчитать</p>
-    </section>
-    <input id="slide-3" type="radio" name="slides">
-    <section class="slide slide-three">
-    <img class="carousell-img"  src="img\slide-img3.png">
-
-    <h2 class="slide-header">Только наркотики,<br>
-только хардкор!</h2>
-    <p class="slide-description">Все дизайнерские решения в нашей компании принимаются<br>только под воздействием качественных галлюциногенов.</p>
-    </section>
+<a href="#" class="carousell-button">Узнать больше</a>  
+<div id="slider">
+	<input type="radio" name="slider" id="slide1" checked="">
+	<input type="radio" name="slider" id="slide2">
+	<input type="radio" name="slider" id="slide3">
+	<div id="slides">
+		<div id="overflow">
+			<div class="inner">
+				<div class="page">
+					  
+        	<img class="carousell-img" src="img\slide-img1.png">
+			<h2 class="slide-header">Долго, дорого,<br> 
+    		скрупулезно.</h2>
+    		<p class="slide-description">Математически выверенный дизайн<br> 
+    		для вашего сайта или мобильного приложения.</p>
+     	
+				</div>
+				<div class="page">
+					<img class="carousell-img" src="img\slide-img2.png">
+			<h2 class="slide-header">Любите ли вы математику,<br>
+			как любим ее мы?</h2>
+    		<p class="slide-description">Нашим дизайнерам мы удаляем нейроны, ответственные<br>
+			за креатив, чтобы дать им возможность все просчитать</p>
+				</div>
+				<div class="page">
+					
+    		<img class="carousell-img"  src="img\slide-img3.png">
+		    <h2 class="slide-header">Только наркотики,<br>
+			только хардкор!</h2>
+    		<p class="slide-description">Все дизайнерские решения в нашей компании принимаются<br>только под воздействием качественных галлюциногенов.</p>
+    	
+				</div>
+				</div> <!--inner-->
+		</div> <!--overflow-->
+	</div> <!--slides-->
+		<div id="active">
+		<label for="slide1"></label>
+		<label for="slide2"></label>
+		<label for="slide3"></label>
+	</div>	
+	</div>
 </div>
 </div>
-<DIV class="wrapp">
+<div class="wrapp">
 <main class="container ">
 	<section class="feauchers  clearfix">
 			<div class="feauchers-item">
