@@ -190,22 +190,7 @@ height: 350px;
 #overflow {overflow: hidden;}
 #slider input {display: none;}
 
-#controls {
-position: absolute;
-width:100%;
-top: 120px;
-left: 0;
-height: 50px;
-}
 
-#controls label {
-display: none;
-opacity: 0.3;
-cursor: pointer;
-}
-#controls label:hover {
-opacity: 0.8;
-}
 													/* перелистывание фотографий */	
 
 
@@ -235,6 +220,7 @@ opacity: 0.8;
 	border-radius: 50%;	
 	position: relative;
 	margin-right: 5px;
+	cursor: pointer;
 }
 
 #slide1:checked ~ #active label:nth-child(1):after
