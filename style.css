@@ -29,10 +29,11 @@ body{
 	padding-top: 30px;
 }
 nav{
-	
+	max-width:450px; 
 }
 nav li{
 	display: inline-block;
+	font-size: 0;
 }
 nav:last-child{
 	margin-right: 0;
@@ -68,6 +69,8 @@ header{
 	font-size: 0;
 	margin-left: 185px;
 	padding-left: 0;
+	margin-right: 0;
+	padding-right: 0;
 }
 .main-navigation{
 	float:left;
@@ -525,24 +528,51 @@ footer a{
 .social-btn{
 	vertical-align: top;
 	border-radius: 50%; 
-	display: inline-block;
+	 display: flex;
 	width: 60px;
 	height: 60px;
 	margin: 0 2px;
-	background: #e1e1e1 url(img/spritesheet.png) no-repeat;
+	background: #e1e1e1;
 	font-size: 0;
 	text-decoration: none;
 	margin-right: 	27px;
+	position: relative;
+}
+.social-btn:hover{
+	background: #fb565a;
+}
+.social-btn:active{
+	background-color: #b63538;
+	box-shadow: inset 0px 2px 0px 0px rgba(50, 50, 50, 0.41);
 }
 .social-btn:nth-child(3){
 	margin-right: 0px;
 }
 .sprite-icon-vk{
-		background-position: -27px -36px;
+	background: url(img/spritesheet.png) no-repeat;
+	display: block;
+	width: 26px;
+    height: 15px;
+   	background-position: -27px -36px;
+    margin: auto;
+
 }
 .sprite-icon-facebook{
-	  background-position: -5px -5px;
+	background: url(img/spritesheet.png) no-repeat;
+	display: block;	
+	width: 12px;
+    height: 22px;
+    background-position: -5px -5px;
+    
+    margin: auto;
+	
 }
 .sprite-icon-instagramm{
-	 background-position: -27px -5px;
+	background: url(img/spritesheet.png) no-repeat;
+	background-position: -27px -5px;
+	display: block;	
+	width: 21px;
+    height: 21px;
+    
+    margin: auto; 
 }
