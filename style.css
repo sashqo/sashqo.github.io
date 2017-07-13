@@ -30,6 +30,7 @@ body{
 }
 nav{
 	max-width:450px; 
+	display: inline-block;
 }
 nav li{
 	display: inline-block;
@@ -48,7 +49,7 @@ header{
 .bucket{
 	float:right;
 	display: inline-block;
-	padding-top: 60px;
+	padding-top: 65px;
 }
 .icon-basket span{
 	color: #000000;
@@ -74,7 +75,7 @@ header{
 }
 .main-navigation{
 	float:left;
-	padding-top: 60px;
+	padding-top: 65px;
 }
 .main-navigation li{
 	font-size: 14px;
@@ -104,21 +105,20 @@ a{
 	margin: 0 auto;
 }
 .carousell img{
-	float: right;
-	margin-top: 70px;
+	float: right;	
 	margin-right: 0;
 	padding-right: 0;
 }
 .carousell h2{
 	margin-top: 0;
-
+    max-width: 470px;
 }
 .slide3 img{
 	margin-top: 20px;
 } 
 .slide-header{	
 	margin-bottom: 20px;
-	padding-top: 75px;
+	padding-top: 70px;
 	font-size: 36px;
 	min-width: 250px;
 	line-height: 36px;
@@ -126,15 +126,13 @@ a{
 
 .slide-description{
 	margin-bottom: 35px;
-	min-width: 380px;
+	max-width: 470px;
 	font-weight: 700;
 	font-size: 16px;
 	line-height: 20px;
 	margin-top: 0px;
 	color: #283136;
 }
-
-
 
 .slide {
 	background-color: #eeeeee;
@@ -146,8 +144,7 @@ a{
 	transition: left 0s .75s;
 	height: 350px;
 }
-
-	.carousell-button{
+.carousell-button{
 	background-color: #fb565a;
 	font-size: 12px;
 	font-weight: 700;
@@ -162,7 +159,8 @@ a{
 	left:0px;
 	z-index: 2000;
 	position: absolute;
-	}
+}
+
 .carousell-button:hover{
 	background-color: #d6494d;
 }
@@ -178,20 +176,23 @@ background-color: #eeeeee;
 height: 350px;
 }
 .inner {width: 500%;}
-.inner:after {
-	content:'';
-	display: block;
-	height: 0;
-	clear:both;
-	}
-.page {float: left; width: 20%;}
-.page img {float: right;
-	margin-top: 70px;
-	margin-right: 0;
-	padding-right: 0;}
 
-#overflow {overflow: hidden;}
-#slider input {display: none;}
+.page {float: left;
+width: 20%;
+}
+.page img {
+	float: right;
+	margin-top: 50px;
+	margin-right: 0;
+	padding-right: 0;
+}
+
+#overflow {
+	overflow: hidden;
+}
+#slider input {
+	display: none;
+}
 
 
 													/* перелистывание фотографий */	
@@ -293,26 +294,32 @@ transition: all 0.8s ease-in-out;
 	float: right;
 }
 .feauchers-item h3{
-	margin-top: 20px;
+	margin-top: 25px;
 	font-size: 18px;
 	text-transform: uppercase;
+
 }
 .feauchers-item p {
 	font-size: 15px;
 	font-weight: 700;
 	color: #283136;
-	margin-bottom: 30px;
+	margin-top: 20px;
+	line-height: 22px;
+	margin-bottom: 0;
 }
 .order-button{
+	display: inline-block;
 	font-size: 12px;
 	font-weight: 700;
 	text-transform:uppercase;
 	color: #ffffff;
+	line-height: 14px;
 	padding-top: 12px;
 	padding-bottom: 12px;
 	padding-left: 40px;
 	padding-right: 40px;
 	border-radius: 3px;
+	margin-top: 28px;
 }
 .order-button.red:hover{
 	background-color: #d6494d;
@@ -358,6 +365,7 @@ h1{
 	width: 522px;
 }
 .studio-description{
+	display: inline-block;
 	font-size: 16px;
 	font-weight: 700;
 	color: #283136;
@@ -365,14 +373,17 @@ h1{
 	line-height: 22px
 }
 .about-studio{
+	display: inline-block;
 	min-height: 470px;
 	border-bottom: 2px solid #eeeeee;
 }
 .about-studio ul{
+	display: inline-block;
 	margin-top: 40px;
 	padding-left: 0;
 }
 .about-studio ul p{
+	display: inline-block;
 	color: #283136;
 	font-size: 16px;
 	font-weight: 700;
@@ -382,6 +393,7 @@ h1{
 	margin-bottom: 0;
 }
 .about-studio li{
+
 padding-left: 35px;
 	list-style-type: none;
 	color: #283136;
