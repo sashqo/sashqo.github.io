@@ -273,8 +273,8 @@ transition: all 0.8s ease-in-out;
 -moz-transition: all 0.8s ease-in-out;
 -ms-transition: all 0.8s ease-in-out;
 -o-transition: all 0.8s ease-in-out;
-}
 
+}
 
 .feauchers{
 	padding-left: 0;
@@ -372,7 +372,8 @@ h1{
 	font-weight: 700;
 	color: #283136;
 	width: 575px;
-	line-height: 22px
+	line-height: 20px;
+	margin:0;
 }
 .about-studio{
 	display: inline-block;
@@ -381,18 +382,19 @@ h1{
 }
 .about-studio ul{
 	display: inline-block;
-	margin-top: 40px;
 	padding-left: 0;
+	margin-top: 0; 	
 }
-.about-studio ul p{
+.about-studio  h2{
 	display: block;
 	color: #283136;
 	font-size: 16px;
 	font-weight: 700;
 	text-transform: uppercase;
-	line-height: 16px;
-	padding-bottom: 30px;
+	line-height: 18px;
+	padding-bottom: 25px;
 	margin-bottom: 0;
+	margin-top: 50px;
 }
 .about-studio li{
    display: inline-block;
@@ -402,10 +404,9 @@ h1{
 	color: #283136;
 	font-weight: 700;
 	font-size: 16px;
-	margin-bottom: 30px;	
+	margin-bottom: 28px;	
 	position: relative;
-	line-height: 16px;
-
+	
 }
 .about-studio li:before{
 content: "";
@@ -421,11 +422,12 @@ left: 0;
 	width: 240px;
 	min-height: 470px;
 }
+.index-content-right h2{
+	margin-top: 70px;
+}
 .logo_content {
-	margin-top: 60px;
-	margin-bottom: 60px; 
-	position: relative;
-	
+	margin-top: 60px;	
+	position: relative;	
 }
 .logo_content img{
 	margin-left: auto;
@@ -434,9 +436,9 @@ left: 0;
 }
 .logo_content span{
 	text-transform: uppercase;
-	padding:0 15px;
+	padding: 0 15px;
 	background:  #ffffff;
-	line-height: 16px;
+	line-height: 20px;
 	position: relative;
 	font-size: 16px;
 	font-weight: 700;
@@ -457,8 +459,8 @@ left: 0;
 	position: relative;
 }
 .partners{
-	padding-top: 45px;
-	padding-bottom: 45px;
+	padding-top: 35px;
+	padding-bottom: 35px;
 	border-bottom: 2px solid #eeeeee;
 }
 .partners-list a {
@@ -484,35 +486,50 @@ left: 0;
 	padding-right: 0px;
 }
 
+
+.index-contacts{	
+	margin-top: 85px;
+	width: 	100%;
+}
+.wrapp-contacts{
+	width: 	880px;
+	margin: 0 auto;
+	position: 	relative;	
+}
+.contacts{
+	top:85px;
+	left: 0px;
+	position: absolute;
+	background-color: white;
+	width: 250px;
+	min-height: 240px;
+}
 .contacts .order-button{
 	padding-right: 56px;
 	padding-left: 56px;
 	margin-left: 20px;
+	margin-top:25px;
 }
 .contacts  h4{
 	margin-top: 0; 
 	font-size: 16px;
 	padding-left: 20px;
 	padding-top: 30px;
+	line-height: 18px;
 }
 .contacts p{
 	padding-left: 20px;
 	color: #666666;
 	font-size: 16px;
 	line-height: 20px;
+	margin-top: 20px;
+	margin-bottom: 0;
+}
+.contacts .telephone{
+	display: block;
 	margin-top: 25px;
-}
-.index-contacts{
-	position: relative;
-	margin-top: 85px;
-}
-.contacts{
-	top:90px;
-	left: 160px;
-	position: absolute;
-	background-color: white;
-	width: 250px;
-	min-height: 240px;
+	margin-bottom: 0px;
+	line-height: 16px;
 }
 footer{
 	min-height: 215px;
@@ -521,7 +538,7 @@ footer a{
 	float:left;
 }
 .footer-content-right{
-	margin-top: 70px;
+	margin-top: 65px;
 	float:right;
 	margin-right: 	32px;
 }
@@ -529,11 +546,13 @@ footer a{
 	font-size: 	36px;
 	margin: 0px;
 	color: 	#000000;
+	line-height:38px;
 }
 .footer-content-right p{
 	font-size: 	16px;
 	font-weight: 700;
 	color: 	#283136;
+	margin-top: 13px;
 }
 .footer-social{
 	display: inline-block;
