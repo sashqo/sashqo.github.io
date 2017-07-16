@@ -3,29 +3,47 @@
 <head>
 	<meta charset="utf-8">
 	<title> Дизайн студия "Nerds"</title>
+	<link rel="shortcut icon" href="img/nerds.png" type="image/png">
 	<link href="normalize.css" rel="stylesheet">
 	<link href="style.css" rel="stylesheet">
 	<link rel="stylesheet" href="symbols-nerds.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<script type="text/javascript" src="js/jquery.1.7.1.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			
+
+			// Плавный скролл по якорям
+			$('a[href^="#"]').bind("click", function(e){
+  var anchor = $(this);
+  $('html, body').stop().animate({
+   scrollTop: $(anchor.attr("href")).offset().top
+  }, 1000);
+  e.preventDefault();
+ });
+ return false;﻿
+		  
+		});
+	</script>
 </head>
 <body>
 <div class="wrapper">
 <div class="wrapp">
-<header class="clearfix">
+<header class="clearfix" id="header">
 <div class="logo"><a href=""> <img alt="Nerds" src="img/logonerds.png"></a></div>
 <nav class="main-navigation"> 
 <ul>
-	<li>
-		<a href="#">Cтудия</a>
+	<li class="active">
+		<a  href="#">Cтудия</a>
 	</li>
 	<li>
-		<a href="#">Клиенты</a>
+		<a href="#partners">Клиенты</a>
 	</li>
 	<li>
 		<a href="#">Магазин</a>
 	</li>
 	<li>
-		<a href="#">Контакты</a>
+		<a href="#contacts">Контакты</a>
 	</li>
 	</ul>
 </nav>
@@ -127,7 +145,7 @@
 			</ul>
 		</div>
 		</section>
-		<section class="partners ">
+		<section class="partners" id="partners">
 		<ul class="partners-list">
 		<li>
 		<a href=""><img src="img\gluckanko.png"></a>			
@@ -142,7 +160,7 @@
 		</section>	
 </main>
 </DIV>
-<div class="index-contacts ">
+<div class="index-contacts" id="contacts">
 <div class="wrapp-contacts">				
 <section class="contacts">
 				<h4>NЁRDS DESIGN STUDIO</h4>
@@ -153,7 +171,7 @@
 </div>
 		<iframe src="https://snazzymaps.com/embed/3263" width="100%" height="420px" style="border:none;"></iframe>
 </div>
-<footer class="container clearfix">
+<footer class="container clearfix" id="footer">
 	 <div class="footer-content-right">
 	 <p class="social-header">Давайте дружить, это выгодно!</p>
 	 <p class="social-discount">Скидка 10% для друзей из социальных сетей.</p>
@@ -164,5 +182,6 @@
 		<a  class="social-btn " href="https://www.instagram.com"><span class="sprite-icon-instagramm"></span>instagramm</a>		
 </section>
 </footer>
+
 </body>
 </html>

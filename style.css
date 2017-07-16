@@ -33,10 +33,12 @@ body{
 nav{
 	max-width:450px; 
 	display: inline-block;
+
 }
 nav li{
 	display: inline-block;
 	font-size: 0;
+	position: relative;
 }
 nav:last-child{
 	margin-right: 0;
@@ -47,7 +49,19 @@ header{
 	text-transform:uppercase;
 	background-color: #eeeeee;
 	}
-
+.active{ 
+	position: relative;
+	background-color: none;
+}
+.active:after{
+	content: "";
+	position: absolute;
+	bottom: -5px;
+	right: 0px;
+	left: 0px;
+	height: 2px;
+	background-color: #fb565a;
+}
 .bucket{
 	float:right;
 	display: inline-block;
@@ -273,6 +287,7 @@ transition: all 0.8s ease-in-out;
 -moz-transition: all 0.8s ease-in-out;
 -ms-transition: all 0.8s ease-in-out;
 -o-transition: all 0.8s ease-in-out;
+animation: inner 2s infinite;
 
 }
 
