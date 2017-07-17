@@ -53,6 +53,9 @@ header{
 	position: relative;
 	background-color: none;
 }
+.active:hover{
+	
+}
 .active:after{
 	content: "";
 	position: absolute;
@@ -625,3 +628,128 @@ footer a{
     
     margin: auto; 
 }
+/**************************************CATALOG**************************************/
+.catalog-header {
+	font-size: 40px;
+	width: 653px;
+	text-align: center;
+	text-transform: uppercase;
+	margin-left: auto;
+	margin-right: auto;
+	line-height: 46px;
+}
+.catalog-main{
+	margin-top: 80px;
+	min-height: 1130px;
+}
+.catalog-main-left{
+	float: left;
+	width: 240px;
+	min-height: 1130px;
+}
+.catalog-main-right	{
+	float: right;
+	width: 540px;
+	min-height: 1130px;
+}
+.price-select{
+	min-height: 170px;
+	width: 100%;
+}
+.price-select p{
+	text-transform: uppercase;
+	font-weight: 700;
+	margin-bottom:0; 
+}
+.price-line-block{
+	background-color: #f1f1f1;
+	height: 80px;
+	width: 100%;
+	margin-top: 22px;
+	position: relative; 
+}
+.price-line{
+	position: absolute;
+	height: 2px;
+	width: 190px;
+	background-color: #d7dcde;
+	top: 50%;
+	left: 10%;
+}
+.price-line-active{
+	position: absolute;
+	height: 2px;
+	width: 130px;
+	background-color: #00ca74;
+	top: 50%;
+	left: 12%;
+}
+.price-circle {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: #ffffff;
+	top:39%;	
+	cursor: pointer;
+	z-index: 100;
+}
+.price-circle:before{
+	width: 5px;
+	height: 5px;
+	background-color: #ababab;
+	position: absolute;
+	top: 35%;
+	left: 38%;
+	z-index: 100;
+	border-radius: 50%; 
+	content: "";
+}
+.price-circle:last-child:before{
+	opacity: 0.8;
+}
+.price-select-form{
+	display: inline-block;
+	
+}
+.price-select-form p{
+ 
+	
+	margin-right: 10px;
+}
+.price-select input{
+	background-color: #f1f1f1;
+	outline: none;
+	font:inherit;
+	color: inherit;
+	text-transform: inherit;
+	width: 80px;
+	display: inline-block;
+	text-align: center;
+	border: none;
+	height: 40px;
+	font-weight: 700;
+	color: #283136;
+	border-radius: 5px;
+	margin-top: 15px;
+	margin-right: 20px;
+}
+.price-select-form input:last-child{
+	margin-right: 0px;
+}
+	
+.start-circle{
+	left: 20px;
+	-webkit-box-shadow: 0px 3px 0px 0px #cfcfcf;
+-moz-box-shadow:    0px 3px 0px 0px #cfcfcf;
+box-shadow:         0px 3px 0px 0px #cfcfcf;
+}
+.end-circle{
+
+	right: 70px;
+	-webkit-box-shadow: 0px 3px 0px 0px #dcdcdc;
+-moz-box-shadow:    0px 3px 0px 0px #dcdcdc;
+box-shadow:         0px 3px 0px 0px #dcdcdc;
+}
+
+/**********************************************************************************/

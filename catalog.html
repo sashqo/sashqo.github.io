@@ -11,7 +11,6 @@
 	<script type="text/javascript" src="js/jquery.1.7.1.min.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function(){
-			
 
 			// Плавный скролл по якорям
 			$('a[href^="#"]').bind("click", function(e){
@@ -40,7 +39,7 @@
 		<a href="#partners">Клиенты</a>
 	</li>
 	<li>
-		<a href="sashqo.github.io\catalog.html">Магазин</a>
+		<a href="#">Магазин</a>
 	</li>
 	<li>
 		<a href="#contacts">Контакты</a>
@@ -52,72 +51,34 @@
 </div>	
 </header>
 <div class="wrapp clearfix carousell"> 
-<a href="#" class="carousell-button">Узнать больше</a>  
-<div id="slider">
-	<input type="radio" name="slider" id="slide1" checked="">
-	<input type="radio" name="slider" id="slide2">
-	<input type="radio" name="slider" id="slide3">
-	<div id="slides">
-		<div id="overflow">
-			<div class="inner">
-				<div class="page">
-					  
-        	<img class="carousell-img" src="img\slide-img1.png">
-			<h2 class="slide-header">Долго, дорого,<br> 
-    		скрупулезно.</h2>
-    		<p class="slide-description">Математически выверенный дизайн<br> 
-    		для вашего сайта или мобильного приложения.</p>
-     	
-				</div>
-				<div class="page">
-					<img class="carousell-img" src="img\slide-img2.png">
-			<h2 class="slide-header">Любите ли вы математику,<br>
-			как любим ее мы?</h2>
-    		<p class="slide-description">Нашим дизайнерам мы удаляем нейроны, ответственные<br>
-			за креатив, чтобы дать им возможность все просчитать</p>
-				</div>
-				<div class="page">
-					
-    		<img class="carousell-img"  src="img\slide-img3.png">
-		    <h2 class="slide-header">Только наркотики,<br>
-			только хардкор!</h2>
-    		<p class="slide-description">Все дизайнерские решения в нашей компании принимаются<br>только под воздействием качественных галлюциногенов.</p>
-    	
-				</div>
-				</div> <!--inner-->
-		</div> <!--overflow-->
-	</div> <!--slides-->
-		<div id="active">
-		<label for="slide1"></label>
-		<label for="slide2"></label>
-		<label for="slide3"></label>
-		</div>	
-	</div>
+	<h1 class="catalog-header">Добро пожаловать в магазин 
+готовых макетов</h1>
 </div>
 </div>
 </div>
 <div class="wrapp">
 <main class="container ">
-	<section class="feauchers  clearfix">
-			<div class="feauchers-item">
-					<img height="124" width="240" src="img\feaucers-sites.png">
-					<h3 class="feachures-name">Веб-сайты</h3>
-					<p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-					<a href="#" class="order-button red">Заказать</a>
+	<section class="catalog-main clearfix">
+			<section class="catalog-main-left">
+				<form class="price-select"> 
+				<p>Стоимость:</p>
+					<div class="price-line-block">
+						<div class="price-line"></div>
+						<div class="price-circle start-circle"></div>
+						<div class="price-circle end-circle"></div>
+						<div class="price-line-active"></div>
+					</div>
+					<div class="price-select-form" action="#" method="GET">
+					<p>от</p>
+						<input type="text" name="from" value="0" placeholder="">
+					<p>до</p>
+						<input type="text" name="until" value="15 000" placeholder="">						
+					</div>
+				</form>
+					
+			</section>
 
-				</div>
-				<div class="feauchers-item">
-					<img height="124" width="240" src="img\feaucers-apps.png">
-					<h3 class="feauchers-name">Приложения</h3>
-					<p>Покорите топ-10 приложений<br> в AppStrore и Google Play</p>
-					<a href="#" class="order-button green">Заказать</a>
-				</div>
-				<div class="feauchers-item">
-					<img height="124" width="240"  src="img\feaucers-presentation.png">
-					<h3 class="feauchers-name">Презентации</h3>
-					<p>Вы даже не подозреваете, насколько вы изумительны!</p>
-					<a href="#" class="order-button yellow">Заказать</a>
-				</div>		
+			<section class="catalog-main-right"></section>
 	</section>
 	<section class="about-studio">
 		<div class="index-content-left">
