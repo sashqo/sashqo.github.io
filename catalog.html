@@ -29,16 +29,16 @@
 <div class="wrapper">
 <div class="wrapp">
 <header class="clearfix" id="header">
-<div class="logo"><a href=""> <img alt="Nerds" src="img/logonerds.png"></a></div>
+<div class="logo"><a href="sashqo.github.io"> <img alt="Nerds" src="img/logonerds.png"></a></div>
 <nav class="main-navigation"> 
 <ul>
+	<li >
+		<a  href="sashqo.github.io">Cтудия</a>
+	</li>
+	<li>
+		<a href="sashqo.github.io #partners">Клиенты</a>
+	</li>
 	<li class="active">
-		<a  href="#">Cтудия</a>
-	</li>
-	<li>
-		<a href="#partners">Клиенты</a>
-	</li>
-	<li>
 		<a href="#">Магазин</a>
 	</li>
 	<li>
@@ -50,14 +50,14 @@
 	<a href="#" class="icon-basket"><span>Корзина</span></a>
 </div>	
 </header>
-<div class="wrapp clearfix carousell"> 
+<div class="wrapp catalog-header-box clearfix"> 
 	<h1 class="catalog-header">Добро пожаловать в магазин 
 готовых макетов</h1>
 </div>
 </div>
 </div>
 <div class="wrapp">
-<main class="container ">
+<main class="container">
 	<section class="catalog-main clearfix">
 			<section class="catalog-main-left">
 				<form class="price-select"> 
@@ -74,51 +74,33 @@
 					<p>до</p>
 						<input type="text" name="until" value="15 000" placeholder="">						
 					</div>
-				</form>
-					
-			</section>
+				</form>	
+				<div class="grid-group">
+				<legend class="section-header">Сетка:</legend>
+					<ul class="list radio-list">
+						<li><input name="product-group-radio" type="radio" id="radio1" checked><label for="radio1">Адаптивная</label></li>
+						<li><input name="product-group-radio" type="radio" id="radio2"><label for="radio2">Фиксированная</label></li>
+						<li><input name="product-group-radio" type="radio" id="radio3"><label for="radio3">Резиновая</label></li>				
+					</ul>
+				</div>	
+				<div class="grid-group">
+				<legend class="section-header">Особенности:</legend>
+					<ul class="list">
+						<li><label class="login-checkbox" for="ch1"><input type="checkbox" name="feuchers" id="ch1" checked><span class="checkbox-indicator"></span>Слайдер</label></li>
+						<li><label class="login-checkbox" for="ch2"><input type="checkbox" name="feuchers" id="ch2"><span class="checkbox-indicator"></span>Блок преимуществ</label></li>
+						<li><label class="login-checkbox" for="ch3"><input type="checkbox" name="feuchers" id="ch3" checked><span class="checkbox-indicator"></span>Новости</label></li>
+						<li><label class="login-checkbox" for="ch4"><input type="checkbox" name="feuchers" id="ch4"><span class="checkbox-indicator"></span>Галерея</label></li>
+						<li><label class="login-checkbox" for="ch5"><input type="checkbox" name="feuchers" id="ch5"><span class="checkbox-indicator"></span>Корзина</label></li>
+						
+			</ul>
+			
+				</div>	
+				<button href="#" type="submit" class="order-button-gray">Показать</button>			
+	        </section>
 
 			<section class="catalog-main-right"></section>
 	</section>
-	<section class="about-studio">
-		<div class="index-content-left">
-			<h1>Мы — маленькая, но гордая дизайн-студия из Краснодара.</h1>
-			<p class="studio-description">Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива. Работаем не покладая рук, как роботы.</p>
-			<h2>Выполняем заказы на разработку:</h2>
-			<ul>				
-				<li>Веб-сайтов любой сложности</li>
-				<li>Мобильных приложений для iOS и Android</li>
-				<li>Слайдшоу и видео для корпоративных презентаций</li>
-			</ul>
-		</div>
-		<div class="index-content-right">
-			<div class="logo_content">
-			<img src="img\nerds_content.png" width="187" height="75">
-			<div>
-			<span>Since 2004</span>
-			</div>
-			</div>
-			<h2>Как мы работаем:</h2>
-			<ul>				
-				<li>С самоотдачей 146%</li>
-				<li>Соблюдая сроки на 100%</li>
-				<li>По предоплате 50%</li>
-			</ul>
-		</div>
-		</section>
-		<section class="partners" id="partners">
-		<ul class="partners-list">
-		<li>
-		<a href=""><img src="img\gluckanko.png"></a>			
-		</li>
-		<li>
-		<a href=""><img src="img\htmlacademy.png"></a>
-		</li>
-		<li>
-		<a href=""><img src="img\borodinsky.png"></a>
-		</li>			
-		</ul>
-		</section>	
+	
 </main>
 </DIV>
 <div class="index-contacts" id="contacts">
