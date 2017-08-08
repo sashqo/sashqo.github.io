@@ -68,11 +68,11 @@
 						<div class="price-circle end-circle"></div>
 						<div class="price-line-active"></div>
 					</div>
-					<div class="price-select-form" action="#" method="GET">
-					<p>от</p>
-						<input type="text" name="from" value="0" placeholder="">
-					<p>до</p>
-						<input type="text" name="until" value="15 000" placeholder="">						
+					<div class="price-select-form clearfix" action="#" method="GET">
+					<p class="price-select-form__item">от</p>
+						<input pclass="price-select-form__item" type="text" name="from" value="0" placeholder="">
+					<p class="price-select-form__item">до</p>
+						<input class="price-select-form__item" type="text" name="until" value="15 000" placeholder="">						
 					</div>
 				</form>	
 				<div class="grid-group">
@@ -112,7 +112,7 @@
 					<input name="trigon" type="radio" id="trigon2" ><label for="trigon2"></label>
 					</li>
 					</ul>
-		<section class="portfolio">
+		<section class="portfolio clearfix">
 			<div class="portfolio-item">
 			<ul>
 				<li><span class="circle"></span></li>
@@ -227,18 +227,27 @@
 		<a  class="social-btn " href="https://www.instagram.com"><span class="sprite-icon-instagramm"></span>instagramm</a>		
 </section>
 </footer>
-<div class="modal-content">
+<div class="modal-content clearfix">
 	<button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
 	<form class="name" action="https://echo.htmlacademy.ru" method="post">
-	<p>Ваше имя:</p>
-	<input class="contact-input" type="text" name="cotacts" placeholder="Предаставтесь, пожалуйста">
-	<p>Ваш e-mail</p>
-    <input class="contact-input" type="text" name="contacts" placeholder="Для отправки ответа">
-    <p>Текст письма</p>
-     <input class="contact-input letter" type="text" name="contacts" placeholder="В свободной форме">
+		<div class="user-data-block">
+		<div class="user-data-block-left">
+			<p>Ваше имя:</p>
+			<input class="contact-input" type="text" name="cotacts" placeholder="Предаставтесь, пожалуйста">
+		</div>
+		<div class="user-data-block-right">	
+			<p>Ваш e-mail</p>
+    		<input class="contact-input" type="text" name="contacts" placeholder="Для отправки ответа">
+    	</div>
+    		<div class="letter">
+    		<p>Текст письма</p>
+    		 <input class="contact-input letter" type="text" name="contacts" placeholder="В свободной форме">
+		</div>
+		</div>
+		<button class="btn" type="submit">Отправить</button>
 	</form> 
-	<button class="btn" type="submit">Отправить</button>
 	
+	</div>
  </div>
 </body>
 </html>
