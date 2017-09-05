@@ -6,6 +6,7 @@ body{
 	margin: 0;
 	min-width: 1200px;
 }
+
 .wrapper{
 	margin: 0 auto;
 	background-color: #eeeeee;
@@ -16,6 +17,7 @@ body{
 	width: 880px;
 	margin: 0 auto;
 }
+
 .container {
 	width:880px;
 	margin: 0 auto;
@@ -45,7 +47,7 @@ nav:last-child{
 }
 header{
 	min-height: 90px;
-	font-weight: 900;
+	font-weight: 700;
 	text-transform:uppercase;
 	background-color: #eeeeee;
 	}
@@ -87,14 +89,14 @@ header{
 	display: inline-block;
 	width: 440px;
 	font-size: 0;
-	margin-left: 185px;
+	
 	padding-left: 0;
 	margin-right: 0;
 	padding-right: 0;
 }
 .main-navigation{
-	float:left;
 	padding-top: 65px;
+	padding-left: 185px;
 }
 .main-navigation li{
 	font-size: 14px;
@@ -130,7 +132,7 @@ a{
 }
 .carousell h2{
 	margin-top: 0;
-    max-width: 470px;
+   
 }
 .slide3 img{
 	margin-top: 20px;
@@ -139,13 +141,12 @@ a{
 	margin-bottom: 20px;
 	padding-top: 70px;
 	font-size: 36px;
-	min-width: 250px;
+	
 	line-height: 36px;
 }
 
 .slide-description{
 	margin-bottom: 35px;
-	max-width: 470px;
 	font-weight: 700;
 	font-size: 16px;
 	line-height: 20px;
@@ -603,9 +604,9 @@ footer a{
 .sprite-icon-vk{
 	background: url(img/spritesheet.png) no-repeat;
 	display: block;
-	width: 26px;
-    height: 15px;
-   	background-position: -27px -36px;
+	 background-position: 0px -14px;
+  width: 9px;
+  height: 18px;
     margin: auto;
 
 }
