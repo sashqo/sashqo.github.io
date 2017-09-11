@@ -604,9 +604,9 @@ footer a{
 .sprite-icon-vk{
 	background: url(img/spritesheet.png) no-repeat;
 	display: block;
-	 background-position: 0px -14px;
-  width: 9px;
-  height: 18px;
+	width: 26px;
+    height: 15px;
+    background-position: -27px -36px;
     margin: auto;
 
 }
