@@ -608,6 +608,7 @@ footer a{
     height: 15px;
     background-position: -27px -36px;
     margin: auto;
+    /***не работает!**/
 
 }
 .sprite-icon-facebook{
