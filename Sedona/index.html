@@ -10,19 +10,17 @@
 <body class="page-body">
 	<div class="wrapper">
 	<header class="main-header">
-		<h1 class="visually-hidden">Sedona</h1>
+		<h1 class="visually-hidden">Sedona</h1>		
 		<nav class="main-nav">
-			<ul class="main-nav__list ">
+			<ul class="main-nav__list">
 				<li class="main-nav__item"><a class="main-nav__link" href="">Главная</a></li>
 				<li class="main-nav__item"><a class="main-nav__link" href="">Фото и видео</a></li>				
 				<li class="main-nav__item"><a class="main-nav__link" href="">Форма отзыва</a></li>
 				<li class="main-nav__item"><a class="main-nav__link" href="">Toponar</a></li>			
-				<button class="main-nav__button--close-menu" type="button">Закрыть навигацию</button>	
+				<li><button class="main-nav__button--close-menu" type="button">Закрыть навигацию</button></li>
 				</ul>
-			<div class="main-nav--closed">
-			<div class="main-header__logo">
-			
-		</div>
+				<div class="main-header__logo"></div>
+			<div class="main-nav--closed">		
 			<button class="main-nav__button--open-menu" type="button"></button>
 			</div>
 		</nav>
@@ -44,7 +42,7 @@
 				  <h3 class="feuchers-item__header">НАСТОЯЩИЙ ГОРОДОК</h3>
 				  <div class="feuchers-item__number"><span >№1 </span></div>
 				   <p class="feuchers-item__description">СЕДОНА НЕ АТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ </p>
-			</div>
+				  	</div>
 				   <div class="feuchers-item__img"></div>
 			</div>
 			<div class="benefits clearfix">				
@@ -118,5 +116,15 @@
 	</footer>
 	</div>
 </body>
+<script type="text/javascript">
+		var link = document.querySelector("main-nav__button--open-menu");
+		var	popup = document.querySelector("main-nav__list");
 
+		link.addEventListener("click", function(event) {
+			event.preventDefault();
+			popup.classList.add("main-nav__list--show");			
+			
+		});
+		
+	</script>
 </html>
