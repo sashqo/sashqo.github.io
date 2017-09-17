@@ -403,6 +403,7 @@ box-shadow:          0px -2px 5px 0px rgba(50, 50, 50, 0.67);
 .benefits__header{
 	font-size: 18px;
 	display: block;
+	padding-bottom: 20px;
 }
 .benefits__icon{
 position: absolute;
@@ -414,7 +415,11 @@ top: -10px;
      width: 210px;
      position: relative;     
      padding-left: 15px;
+    padding-bottom: 20px;
      margin: 0 0 0 45px;
+}
+.benefits_textblock:last-child{
+	padding-bottom: 0px;
 }
 .benefits__description{
 	margin-bottom: 0;
@@ -434,6 +439,7 @@ top: -10px;
 		width: 100%;
 		margin: 0;
 		 justify-content: center;
+		  padding-bottom: 0px;
 	}
 	.benefits__icon{
 		position: relative;
@@ -445,6 +451,7 @@ top: -10px;
 }
 .benefits__header{
 	padding-top: 25px;
+	padding-bottom: 0px;
 }
 	.benefits__description{
 	    display: flex;
