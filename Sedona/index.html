@@ -118,13 +118,17 @@
 	</div>
 </body>
 <script type="text/javascript">
-		var link = document.querySelector("main-nav__button--open-menu");
-		var	popup = document.querySelector("main-nav__list");
-
+		var link = document.querySelector(".main-nav__button--open-menu");
+		var	popup = document.querySelector(".main-nav__list");
+		var close = document.querySelector(".main-nav__button--close-menu");
 		link.addEventListener("click", function(event) {
 			event.preventDefault();
 			popup.classList.add("main-nav__list--show");			
 			
+		});
+		close.addEventListener("click", function(event) {
+			event.preventDefault();
+			popup.classList.remove("main-nav__list--show");
 		});
 		
 	</script>
