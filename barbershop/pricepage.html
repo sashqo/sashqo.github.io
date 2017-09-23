@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="RU">
+	<head>
+	<meta charset="UTF-8">
+	<title>Barbershop "BORODINSKI"</title>
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700" rel="stylesheet">
+	<link href="normalize.css" rel="stylesheet">
+	<link href="style.css" rel="stylesheet">
+	</head>
+<body class="itempage-body">
+		<header class="main-header">
+			<div class="container clearfix">
+				<nav class="main-navigation">
+				<a class="inner-logo" href="index.html"><img src="img/Logoitem.png" width="111" height="24" alt="Barbershop Borodinsky"></a>
+					<ul>				
+						<li>
+							<a href="#">ИНФОРМАЦИЯ</a>
+						</li>
+						<li>
+							<a href="#">НОВОСТИ</a>
+						</li>
+						<li class="active">
+							<a href="pricepage.html">ПРАЙС-ЛИСТ</a>
+						</li> 
+						<li>
+							<a href="shoppage.html">МАГАЗИН</a>
+						</li>
+						<li>
+							<a href="#">КОНТАКТЫ</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="user-block">
+					<a class="login" href="#">ВХОД</a>
+				</div>
+			</div>
+		</header>
+<main class=" container clearfix">
+<div class="help-header price-page-help-header">
+	<h1 class="page-title">Прайс-лист</h1>
+		<div class="path-navigation">
+		<ul>
+		<li>
+			<a href="#">Главная</a>
+		</li>
+		<li>
+			<a href="#">Прайс-лист</a>
+		</li>
+		</ul>
+		</div>
+</div>
+<header class="price-title"> 
+	<h2 class="price-page-title">
+			<span>ИСТИННО МУЖСКАЯ КЛАССИКА</span>
+	</h2> 
+</header>
+<div class="price-page-content clearfix">
+	<div class="pricepage-content-left">
+		<section class="item-include ">
+			<h3 class="section-header"> Мы используем только лучшие средства:</h3>
+				<ul class="used-items">
+					<li>Baxter of california</li>
+					<li>Mr natty</li>
+					<li>Suavecito</li>
+					<li>Malin+goetz</li>
+				</ul>
+		</section>
+	</div>	
+		<section class="price-list">
+			<h3 class="section-header">Цены на услуги<br> наших мастеров:</h3>
+			<table class="t-collapse">
+  				<tr>
+	    		<td>Стрижка</td>
+	    		<td>1500 р.</td>
+	   		    </tr>
+	  			<tr>
+	  			<td>Стрижка бороды</td>
+	  			<td>500 р.</td>
+	    		</tr>
+	   			<tr>
+	  			<td>Накрутка усов</td>
+	  			<td>350 р.</td>
+	    		</tr>
+			</table>
+		</section>
+</div>
+	<section class="aboutus clearfix">
+		<h3 class="section-header"> Несколько слов о нас: </h3>
+		<div class="aboutus-left">Наша парикмахерская занимается исключительно мужскими стрижками. Стрижка каждого клиента для нас - это уникальная и продуманная до мелочей работа. Мы не работаем на количество, мы делаем качество.</div>
+		<div class="aboutus-right">Наша мастерская расположена в центре города, поэтому сделать стильную стрижку можно в любое время, даже в обеденный перерыв. Здесь вы можете погрузиться в удобную для вас атмосферу, чувствовать себя комфортно и свободно!</div>
+	</section>	
+</main>
+
+<footer class="main-footer pricepage-footer">
+	<div class="container clearfix">
+	<section class="footer-contacts">
+		<p>	Барбершоп БОРОДИНСКИЙ <br>
+			АДРЕС:Г.САНКТ ПЕТЕРБУРГ, Б.КОНЮШЕННАЯ,Д.19/8<br>
+			<a href="#">Как нас найти</a><br>
+			ТЕЛЕФОН: +7(495) 666-02-66<br>	
+		</p>
+	</section>
+	<section class="footer-social">
+		<p>
+			Давайте дружить!
+		</p>
+		<a  class="social-btn btn-vk" href="#">VK</a>
+		<a  class="social-btn btn-twitter" href="#">TWITTER</a>
+		<a  class="social-btn btn-facebook" href="#">FACEBOOK</a> 	
+	</section>
+	<section class="autor">
+		<p>
+			Разработано:
+		</p>
+			<a  class="btn" href="https://vk.com/toponar">HTMLACADEMY.RU</a>
+	</section>	
+	</div>
+	
+</footer>	
+</body>
+<script type="text/javascript">
+		var link = document.querySelector(".login");
+		var	popup = document.querySelector(".modal-content");
+		var	popupmap = document.querySelector(".modal-map");
+		var mapclose = popupmap.querySelector(".modal-content-close");
+		var close = popup.querySelector(".modal-content-close");
+		var map = document.querySelector(".how-to-find")
+		var form = popup.querySelector("form");
+		var login = popup.querySelector("[name=login]");
+		var password = popup.querySelector("[name=password]");
+		var overlay = document.querySelector(".modal-overlay");
+		var howtofind=document.querySelector(".how-to-find-footer");
+
+
+		link.addEventListener("click", function(event) {
+			event.preventDefault();
+			popup.classList.add("modal-content-show");
+			overlay.classList.add("modal-overlay-show");
+			login.focus();
+		});
+		map.addEventListener("click", function(event) {
+			event.preventDefault();
+			popupmap.classList.add("modal-map-show");
+			overlay.classList.add("modal-overlay-show");
+						
+		});
+		howtofind.addEventListener("click", function(event) {
+			event.preventDefault();
+			popupmap.classList.add("modal-map-show");
+			overlay.classList.add("modal-overlay-show");
+		});
+		close.addEventListener("click", function(event) {
+			event.preventDefault();
+			popup.classList.remove("modal-content-show");
+			overlay.classList.remove("modal-overlay-show");
+		});
+		mapclose.addEventListener("click", function(event) {
+			event.preventDefault();
+			popupmap.classList.remove("modal-map-show");
+			overlay.classList.remove("modal-overlay-show");
+		});
+		form.addEventListener("submit", function(event) {
+			if(!login.value || !password.value) {
+				event.preventDefault();
+				console.log("Nugno vvesti login i password");
+			}
+		});
+		overlay.addEventListener("click", function(event){
+			event.preventDefault();
+		overlay.classList.remove("modal-overlay-show");
+		popup.classList.remove("modal-content-show");	
+		popupmap.classList.remove("modal-map-show");		
+		});
+	</script>
+</html>
