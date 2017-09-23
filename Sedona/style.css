@@ -359,12 +359,11 @@ box-shadow:          0px -2px 5px 0px rgba(50, 50, 50, 0.67);
 	
 }
 .feuchers-item__img{
-
 	width: 100%;
     background: url("img/photo-city-mob.png") no-repeat center;
     background-size: cover;
 }
-
+/*коментраий*/
 
 @media (min-width: 768px) {
 	.cover--blue{
