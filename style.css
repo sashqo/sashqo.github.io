@@ -1,31 +1,62 @@
 body{
-	background-color: #dddddd;
+	background-color: 	#C8C8C8 ;
 	margin:0 auto;
 	width: 85%;
 	max-width: 1280px;
+	font-family: 'PT Sans', sans-serif;
+	font-weight: 400;
+	height:	90vh;
+	font-size: 16px;
+
 }
 header {
 	display: flex;
 	justify-content: space-between;
-	margin-top: 40px;
-	align-items: center; 
+	margin-top: 30px;
+	align-items: center;
+	flex-wrap: wrap;
+
+
 }
 
 .header{
 	display: flex;
 	flex-direction: column;
 	margin-top: 0px;
+	position: relative;
+	min-height: 60px;
+	margin-right: 60px;
+	
+}
+.surname{
+	padding-bottom: 10px;
+	padding-left: 5px;
+	padding-right: 	5px;	
+	border: 3px solid #B00000;
+}
+.name{
+	position: absolute;
+	border: 3px solid #4d4dff;
+	line-height: 	36px;
+	padding-top: 10px;
+	top:40px;
+	left: 30px;
+	padding-left: 5px;
+	padding-right: 	5px;: 
 }
 .contacts{
 	display: flex;
 	flex-direction: column;
-	margin-top: 0px;
+	margin-top: 20px;
+	
+	align-self:flex-end;
 }
 .portfolio__sitelist{
 	list-style-type: none;
 	display: flex;
 	justify-content:space-around;
 	padding:0; 
+	flex-wrap: wrap;
 }
 .portfolio__sitelist img{
 	height: 620px;
@@ -37,6 +68,8 @@ header {
 .portfolio__sitelist li{
 	position: relative;
 	z-index: 110;
+	font-size: 0px;
+	margin-bottom: 	10px;
 }
 .portfolio__sitelist li:hover .hover-background{
 	display: inline-block;
