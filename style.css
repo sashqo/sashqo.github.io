@@ -15,7 +15,7 @@ header {
 	margin-top: 30px;
 	align-items: center;
 	flex-wrap: wrap;
-
+font-weight: 400;
 }
 
 .header{
@@ -23,9 +23,8 @@ header {
 	flex-direction: column;
 	margin-top: 0px;
 	position: relative;
-	min-height: 60px;
-	margin-right: 60px;
-
+	
+	font-weight: 400;
 }
 .surname{
 	padding-bottom: 10px;
@@ -46,9 +45,11 @@ header {
 .contacts{
 	display: flex;
 	flex-direction: column;
-	margin-top: 20px;
 	
-	align-self:flex-end;
+}
+.portfolio__header{
+	font-weight: 400;
+	margin-top: 0px;
 }
 .portfolio__sitelist{
 	list-style-type: none;
@@ -56,6 +57,7 @@ header {
 	justify-content:space-around;
 	padding:0; 
 	flex-wrap: wrap;
+
 }
 .portfolio__sitelist img{
 	height: 540px;
@@ -97,7 +99,7 @@ header {
 
 }
 .hover__header{
-padding-left: 	20px;
+	padding-left: 	20px;
 	font-size: 	18px;
 	text-decoration: underline;	
 }
