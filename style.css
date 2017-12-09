@@ -64,12 +64,10 @@ header {
 }
 
 
-.portfolio__sitelist img{
-	
+.portfolio__sitelist img{	
 	position: relative;
 	width: 320px;	
 	background-color: #eeeeee;
-
 }	
 
 .portfolio__sitelist li{
