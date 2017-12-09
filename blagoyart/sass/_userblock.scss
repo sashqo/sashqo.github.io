@@ -1,0 +1,114 @@
+@media (min-width: 768px){
+	.user{
+			display: flex;
+			justify-content:flex-end;			
+			align-items:center;
+			
+			
+				.user__link{
+					text-transform: uppercase;
+					display: flex;
+					align-items:center;
+					text-decoration: none;
+					font-size: 10.16px;
+					font-weight: 700;
+					position: relative;
+					padding-bottom: 10px;
+					color: #252a54;
+					
+				}				
+				.user__products{
+					font-weight: 700;
+					padding-left: 8px;
+					padding-right: 3px;
+					letter-spacing: 0.6px;
+				}
+				.user__price{
+					font-size: 12.7px;					
+					padding-left: 4px;
+					
+				}
+				.user__sum{	
+					display: inline-block;				
+					font-size: 12.7px;				
+					color: #ffffff;				
+					background-color: #cb944c;
+					width: 20px;
+					height: 18px;
+					border-radius: 50%;
+					text-align: center;
+					line-height: 18px;
+
+								
+				}				
+				.user__price:before{
+					content: "";					
+					background: url("../img/spritesheet_main.png") no-repeat;
+					 background-position: -5px -5px;
+					width: 15px;
+					height: 15px;
+					position: absolute;
+					top: 2px;
+					left: -20px;					
+				}
+				.user__menu{
+						margin-left: 35px;
+						letter-spacing: 0.7px;
+						padding-right: 20px;
+						.user__login{
+							font-size: 12.7px;
+						}
+						.user__login:before{
+							content: "";					
+							background: url("../img/spritesheet_main.png") no-repeat;
+							background-position: -112px -5px;
+							width: 16px;
+							height: 14px;
+							position: absolute;
+							left: -20px;
+						}
+				}
+
+
+	}
+}
+@media (min-width: 1280px){
+	.user{
+		order:3;
+		height: 40px;
+		.user__link{
+			padding-bottom: 0px;
+			font-size: 14px;
+		}
+		.user__price{
+			font-size: 14px;		
+		}
+		.user__sum{
+			font-size: 14px;
+			width: 24px;
+			height:22px;
+			line-height: 22px;
+		}
+		.user__price:before{							
+			background: url("../img/spritesheet_main.png") no-repeat;
+			background-position: -30px -5px;
+			width: 23px;
+			height: 23px;
+			left: -27px;
+			top: 0px;
+		}
+			.user__menu{
+				.user__login{
+					font-size: 14px;
+				}
+				.user__login:before{
+					background: url("../img/spritesheet_main.png") no-repeat;
+					width: 19px;
+   					height: 17px;
+   	 				background-position: -138px -5px;
+   	 				left: -23px;
+				}
+			}
+	}
+
+}

@@ -1,0 +1,38 @@
+.logo__link{
+	margin-left: 20px;
+}
+.logo__heading{
+	font-size: 12.7px;
+	color: #747688;
+	font-weight: 400;
+	margin: 0 0 17px 20px;
+}
+@media (min-width: 768px){
+	.logo__img{
+		margin-top: 24px;
+		width: 179px;
+		height: 23px;
+	}
+	.logo__link{
+		
+		margin-left: 0px;
+	}
+	.logo__heading{
+		line-height: 14px;
+		
+		margin: 0;
+		
+	}
+
+}
+@media (min-width: 1280px){
+	.logo__heading{
+	font-size: 14px;
+	
+	}
+	.logo__img{
+		margin-top: 35px;
+		width: 247px;
+		height: 30px;
+	}
+}

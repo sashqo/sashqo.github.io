@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Интернет-магазин «Благой арт»</title>
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+</head>
+<body>
+	<header class="header">
+		<div class="header__container">
+			<div class="iconlist">
+				<a class="iconlist__item" href="#"><span class="icon iconlist__item--navbutton"></span></a>
+				<a class="iconlist__item" href="#"><span class="icon iconlist__item--homebutton"></span></a>
+				<a class="iconlist__item" href="#"><span class="icon iconlist__item--searchbutton"></span></a>
+				<a class="iconlist__item" href="#"><span class="icon iconlist__item--cartbutton"></span></a>
+				<a class="iconlist__item" href="#"><span class="icon iconlist__item--userbutton"></span></a>
+				<a class="iconlist__item" href="#"><span class="icon iconlist__item--contactbutton"></span></a>
+			</div>
+			<div class="logo">
+				<a class="logo__link" href=""><img class="logo__img" width="192" height="23" src="img/blagoyartlogo.png" alt="BLAGOYART"></a>
+				<h1 class="logo__heading">Интернет-магазин «Благой арт»</h1>				
+			</div>
+			<form class="searchform">
+				
+				<input class="searchform__field" type="search" name="find" placeholder="Введите название или артикул">
+				<input class="searchform__button" type="submit">
+				
+			</form> 
+			<div class="contacts">
+				<p class="contacts__phone">+7 (800) 707-81-39</p>
+				<p class="contacts__info">
+					<span class="contacts__schedule">ПН-ПТ с 9:00 до 18:00</span>
+					<span class="contacts__delivery">Доставка по РФ и СНГ</span>
+				</p>
+			</div>
+		</div>
+		<div class="header__wrapper"> <!-- для позиционирования на широком екране-->
+		<div class="user">
+			<div class="user__shopcart">
+				<a  class="user__link" href="#"> 
+					<span class="user__sum">10</span>
+					<span class="user__products">Товаров</span>
+					/
+					<span class="user__price">56 789 Р</span>
+				</a>
+			</div>
+			<div class="user__menu">
+				<a class="user__link" href="#"><span class="user__login">Войти</span></a>
+			</div>
+		</div>
+		<nav class="navigation">
+			<ul class="navigation__list">
+				<li class="navigation__listitem navigation__listitem--dropdown"><a href="#">КАТАЛОГ ТОВАРОВ</a>
+					<ul class="dropdownlist">
+						<li class="dropdownlist__item dropdownlist__item--sidedrop"><a href="#">Свадебная бижутерия</a></li>
+						<li class="dropdownlist__item"><a href="#">Аксессуары для волос</a></li>
+						<li class="dropdownlist__item"><a href="#">Броши</a></li>
+						<li class="dropdownlist__item dropdownlist__item--sidedrop"><a href="#">Мужские аксессуары</a>
+							<ul class="sidelist">
+								<li class="sidelist__item sidelist__item--listheader"><a href="#">МУЖСКАЯ БИЖУТЕРИЯ</a></li>
+								<li class="sidelist__item"><a href="#">Браслеты</a></li>
+								<li class="sidelist__item"><a href="#">Кулоны</a></li>
+								<li class="sidelist__item"><a href="#">Зажимы и запонки</a></li>
+							</ul>
+						</li>
+						<li class="dropdownlist__item"><a href="#">Клатчи</a></li>
+						<li class="dropdownlist__item"><a href="#">Детская бижутерия</a></li>
+						<li class="dropdownlist__item"><a href="#">Демонстрационное оборудование</a></li>
+					</ul>
+				</li>
+				<li class="navigation__listitem"><a href="#">УСЛОВИЯ РАБОТЫ</a></li>
+				<li class="navigation__listitem"><a href="#">СКИДКИ</a></li>
+				<li class="navigation__listitem"><a href="#">ОПЛАТА И ДОСТАВКА</a></li>
+				<li class="navigation__listitem"><a href="#">ДОКУМЕНТЫ</a></li>
+				<li class="navigation__listitem"><a href="#">КОНТАКТЫ</a></li>
+							
+			</ul>
+		</nav>
+		</div>
+	</header>
+	<main>
+		<div class="slider">
+			<div class="slider__item">
+				<div class="slider__img">
+					 <img alt="slide" src="img/sliderimage1.jpg"> 
+				</div>
+				<div class="slider__text">
+					<h2  class="slider__heading">Новая коллекция SWAROVSKI уже здесь!</h2>
+				</div>
+			</div>
+			<div class="slider__item">
+				<div class="slider__img">
+					<img alt="slide" src="img/sliderimage1.jpg">
+				</div>
+				<div class="slider__text">
+					<h2 class="slider__heading">Новая коллекция SWAROVSKI уже здесь!</h2>
+				</div>
+			</div>
+			<div class="slider__item">
+				<div class="slider__img">
+					<img alt="slide" src="img/sliderimage1.jpg">
+				</div>
+				<div class="slider__text">
+					<h2 class="slider__heading">Новая коллекция SWAROVSKI уже здесь!</h2>
+				</div>
+			</div>
+		</div>
+		<div class="container center-block row">
+			<div class="benefit col-lg-6 col-xs-4">
+				<h3 >Lorem ipsum dolor</h3>
+				<i class="fa fa-rss fa-5x center-block"></i>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			</div>
+			<div class="benefit col-lg-6 col-xs-4">
+				<h3>Lorem ipsum dolor</h3>
+				<i class="fa fa-thumbs-up fa-5x" ></i>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			</div>
+			<div class="benefit col-lg-12 col-xs-4">
+				<h3>Lorem ipsum dolor</h3>
+				<i class="fa fa-trophy fa-5x" ></i>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			</div>
+		</div>
+	</main>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+<script type="text/javascript" src="js/slider.js"></script>
+</body>
+</html>

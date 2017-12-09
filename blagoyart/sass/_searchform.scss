@@ -1,0 +1,51 @@
+.searchform{
+	position: relative;
+	width: 31%;
+
+		.searchform__field{	
+		width: 100%;
+		padding-left: 10px;
+		padding-right: 40px;
+		margin-top: 23px;
+		margin-left: 11px;
+		height: 31px;
+		border-radius: 5px;
+		border: 1px solid #b9b8bd;
+		font-size: 10px;
+		color: #b9b8bd;		
+		}
+	.searchform__button{
+		position: absolute;
+		right: 10px;
+		top: 33px;
+		margin: 0;
+	    padding: 0;
+	    width: 11px;
+	    height: 11px;  
+		border: none;
+		font-size: 0;
+		background: url("../img/spritesheet_main.png") no-repeat;
+		cursor: pointer;
+		 background-position: -91px -5px;
+		 
+}
+	
+ }
+ @media (min-width: 1280px){
+ 	.searchform{
+ 		width: 497px;
+ 	 	 	.searchform__field{
+	 		margin-top: 35px;
+	 		font-size: 14px;
+	 		height: 40px;
+	 	}
+	 	.searchform__button{
+
+	 		top: 45px;
+	 		width: 18px;
+	   		height: 18px;   	
+	   		background: url("../img/spritesheet_main.png") no-repeat; 
+	   		background-position: -63px -5px;
+	 	}
+ 	}
+ }

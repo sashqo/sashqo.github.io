@@ -1,0 +1,41 @@
+@media (min-width: 768px) {
+	.contacts{
+		display: flex;
+		font-weight: 400;
+		align-items:flex-start;
+				
+		.contacts__phone{
+			display: flex;			
+			font-size: 15px;
+			margin: 0px;
+			padding-top: 25px;
+			line-height: 15px;
+		}
+		.contacts__info{
+			display: flex;
+			flex-direction: column;
+			margin: 0px;
+			font-size: 10px;
+			line-height: 13px;
+			padding-left: 17px;
+			color: #2b3056;		
+			padding-top: 23px;
+			.contacts__schedule{
+				color: #cb944c;
+			}
+		}	
+	}
+}
+@media (min-width: 1280px){
+	.contacts{
+		.contacts__phone{
+			font-size: 23px;
+			padding-top: 37px;	
+		}
+		.contacts__info{
+			padding-top: 33px;
+			font-size: 14px;
+			line-height: 18px;
+		}
+	}
+}

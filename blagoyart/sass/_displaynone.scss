@@ -1,0 +1,15 @@
+.searchform,
+.contacts,
+.user,
+.navigation {
+	display: none;
+	@media (min-width: 768px){
+		display: flex;
+			
+	}
+}
+@media (min-width: 768px){
+	.iconlist{
+		display: none;
+	}
+}

@@ -1,0 +1,47 @@
+@mixin sprite($margin, $wgh, $hgt, $bgpos){
+	 margin:$margin;
+	 width:$wgh;
+	 height: $hgt;
+	 background-position: $bgpos;
+}
+.iconlist{
+		margin: $reset;
+		padding: $reset;
+		display: flex;
+		width: 100%;
+		list-style-type: none;
+		align-items: center;
+			.iconlist__item{
+				width: 16.88%;
+				height: 40px;
+				display: flex; 
+				background-color: #f0f1f6;
+				margin-bottom: 13px;
+	   				.icon{
+	   					background: url("../img/spritesheet.png") no-repeat;
+						background-repeat: no-repeat;
+	   					display: block;
+	   				}
+		   			.iconlist__item--navbutton{
+		   				@include sprite(auto, 16px, 14px, -5px -5px);
+					}
+					.iconlist__item--homebutton{
+						@include sprite(auto, 20px, 16px, -58px -5px);
+					}
+					.iconlist__item--searchbutton{
+						@include sprite(auto, 16px, 16px, -114px -5px);
+					}
+					.iconlist__item--cartbutton{
+						@include sprite(auto, 17px, 17px, -31px -5px);		
+					}
+					.iconlist__item--userbutton{
+						@include sprite(auto, 19px, 16px, -140px -5px);
+					}
+					.iconlist__item--contactbutton{
+						@include sprite(auto, 16px, 17px, -88px -5px);
+}
+			}
+		.iconlist__item:first-child{
+			background-color: #3eade2;
+		}
+	}

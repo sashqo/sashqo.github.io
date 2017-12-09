@@ -1,0 +1,41 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-bucket {
+    width: 15px;
+    height: 15px;
+    background-position: -5px -5px;
+}
+
+.sprite-bucket_hd {
+    width: 23px;
+    height: 23px;
+    background-position: -30px -5px;
+}
+
+.sprite-search {
+    width: 18px;
+    height: 18px;
+    background-position: -63px -5px;
+}
+
+.sprite-search_min {
+    width: 11px;
+    height: 11px;
+    background-position: -91px -5px;
+}
+
+.sprite-user {
+    width: 16px;
+    height: 14px;
+    background-position: -112px -5px;
+}
+
+.sprite-user_hd {
+    width: 19px;
+    height: 17px;
+    background-position: -138px -5px;
+}
