@@ -102,8 +102,7 @@ body {
     min-height: 50px;
     list-style-type: none;
     padding-right: 0;
-    padding-left: 0;
-    box-shadow: 8px 34px 4px -20px #000000; }
+    padding-left: 0;}
     .top-nav .main-navigation a {
       text-decoration: none;
       color: #ffffff;
