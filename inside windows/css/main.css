@@ -947,3 +947,9 @@ footer {
     width: 100%; }
   .footer-nav {
     min-height: 102px; } }
+.hidden{
+visibility:hidden;
+}
+.visible{
+visibility:visible;
+}
