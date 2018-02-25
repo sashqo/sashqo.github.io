@@ -149,6 +149,8 @@ footer .contacts-footer a{font-size:18px;color:white;line-height:18px;position:r
 .how-to-order .how-to-order__desc{align-self:center;margin-top:0;width:100%;}
 .how-to-order .how-to-order__items{margin:0 auto;width:640px;}
 .how-to-order:after{display:none;}
+.catalogue-slider{width:769px;margin-left:auto;margin-right:auto;}
+.catalogue__item{width:48%;margin-right:0px;}
 #scrollbar{display:none;}
 #galleryArea{overflow-x:scroll;}
 .mobilepadding{padding-left:10px;padding-right:10px;}

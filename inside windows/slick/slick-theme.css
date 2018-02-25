@@ -504,7 +504,7 @@
 {
    content: "\f105";
 }
-@media (max-width: 1293px){ 
+@media (max-width: 1280px){ 
      .slick-prev2
 {
     left: -10px;
@@ -513,23 +513,11 @@
 }
 .slick-next2
 {
-    right: -10px;
+    right: 10px;
   
 }
 }
-@media (max-width: 1238px){ 
-     .slick-prev2
-{
-    left: 15px;
-   
 
-}
-.slick-next2
-{
-    right: 15px;
-  
-}
-}
 @media (max-width: 690px){  
    .catalogue__nav{
     width:  300px;
@@ -539,6 +527,16 @@
     margin-left: -150px;  
     justify-content:    center; 
      }
+.slick-prev2
+{
+    left: 0px;
+   
 
+}
+.slick-next2
+{
+    right: 15px;
+  
+}
   
 }
