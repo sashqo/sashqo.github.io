@@ -1,0 +1,470 @@
+@charset 'UTF-8';
+/* Slider */
+.slick-loading .slick-list
+{
+    background: #fff url('./ajax-loader.gif') center center no-repeat;
+}
+
+/* Icons */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800&subset=cyrillic');
+
+/* Arrows */
+.slick-prev,
+.slick-next
+{
+    font-size: 0;
+    line-height: 0;
+
+    position: absolute;
+    bottom:  0px;
+
+    display: block;
+
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+
+    cursor: pointer;
+   
+    
+    border: none;
+    outline: none;
+    
+}
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus
+{
+    color: transparent;
+    outline: none;
+    background: transparent;
+}
+.slick-prev:hover:before,
+.slick-prev:focus:before,
+.slick-next:hover:before,
+.slick-next:focus:before
+{
+    
+}
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before
+{
+    
+}
+
+.slick-prev:before,
+.slick-next:before
+{
+    
+    font-size: 20px;
+    line-height: 1;
+
+    
+    color: #000000;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-prev
+{
+    left: -25px;
+}
+[dir='rtl'] .slick-prev
+{
+    right: -25px;
+    left: auto;
+}
+.slick-prev:before
+{
+   content: '';
+    width: 15px;
+    height: 17px;    
+    position: absolute;
+    background-image: url(../img/ic_keyboard_backspace_black_48px.svg);
+}
+[dir='rtl'] .slick-prev:before
+{
+    content: '→';
+}
+
+.slick-next
+{
+    right: -25px;
+}
+[dir='rtl'] .slick-next
+{
+    right: auto;
+    left: -25px;
+}
+.slick-next:before
+{
+    content: '→';
+}
+[dir='rtl'] .slick-next:before
+{
+    content: '←';
+}
+
+/* Dots */
+.slick-dotted.slick-slider
+{
+   
+}
+
+.slick-dots
+{
+    position: absolute;
+    bottom: -25px;
+
+    display: block;
+
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+
+    text-align: center;
+}
+.slick-dots li
+{
+    position: relative;
+
+    display: inline-block;
+
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    padding: 0;
+
+    cursor: pointer;
+}
+.slick-dots li button
+{
+    font-size: 0;
+    line-height: 0;
+
+    display: block;
+
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+
+    cursor: pointer;
+
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+.slick-dots li button:hover,
+.slick-dots li button:focus
+{
+    outline: none;
+}
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before
+{
+    opacity: 1;
+}
+.slick-dots li button:before
+{
+    font-family: 'slick';
+    font-size: 6px;
+    line-height: 20px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 20px;
+    height: 20px;
+
+    content: '•';
+    text-align: center;
+
+    opacity: .25;
+    color: black;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.slick-dots li.slick-active button:before
+{
+    opacity: .75;
+    color: black;
+}
+/************custom slider**************************/
+
+.slick-prev2,
+.slick-next2
+{
+    font-size: 14px;
+    line-height: 0;
+    position: absolute;   
+    display: block;  
+    padding: 0;  
+    color: transparent;
+    border: none;
+    outline: none;    
+    z-index: 10; 
+    width: 30px;
+    height: 20px;
+    background: transparent; 
+}
+
+.slick-prev2:hover,
+.slick-next2:hover
+{
+    cursor: pointer;
+    color: transparent;
+    outline: none;
+    
+}
+.slick-prev2:before,
+.slick-next2:before
+{      
+    font-size: 14px;
+    letter-spacing: 0px;
+    position: absolute;    
+    vertical-align:middle;  
+    color: #000000;
+    font-weight: 600;     
+}
+
+.slick-prev2
+{   
+   bottom: 35px;     
+   left: 420px;   
+}
+.slick-next2
+{
+    bottom: 35px;
+    left: 525px;    
+}
+
+.slick-prev2:before
+{      
+    left: 0px;
+    bottom: 0px;
+    content: '';
+    width: 15px;
+    height: 17px;    
+    position: absolute;
+    background-image: url(../img/ic_keyboard_backspace_black_48px.svg);
+}
+.slick-next2:before
+{
+    right: 0px;
+    content: '';
+    bottom: 2px;  
+    width: 15px;
+    height: 17px;   
+    position: absolute;
+    background-image: url(../img/ic_keyboard_backspace_black_48px.svg);
+    transform: rotate(180deg);
+}
+
+.slick-prev2:after{
+     content: 'Пред';
+     color: #000000;     
+     position: absolute;
+     bottom: 10px;
+     left: 25px;
+     font-weight: 600;
+}
+.slick-prev2:hover:after{
+    color: #fb697b;
+}
+.slick-next2:after{
+     content: 'След';
+     color: #000000;     
+     position: absolute;
+     bottom: 10px;
+     right: 25px;
+     font-weight: 600;
+}
+.slick-next2:hover:after{
+    color: #fb697b;
+}
+
+@media (max-width:680px){
+        .slick-prev2{   
+       bottom: 35px;     
+       left: 130px;   
+    }
+    .slick-next2{
+        bottom: 35px;
+        left: 250px;       
+    }
+}
+.catalogue__nav{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;  
+    padding-left: 0px;
+    justify-content:center;   
+    position:   absolute;
+    top: -80px;
+    right: 395px;
+    
+}
+
+.catalogue__nav li{ 
+    position: relative;
+    background-color: transparent;
+    display: inline-block; 
+    padding: 0px;
+    margin-right: 20px;    
+  
+    }   
+.catalogue__nav li button{
+    font-size: 0;
+    position: relative; 
+    display: flex;
+    padding: 0;
+    flex-wrap: nowrap;
+    cursor: pointer;
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+    margin:0;
+    align-items:stretch;
+}
+
+.catalogue__nav li button:hover,
+.catalogue__nav li button:focus
+{
+    outline: none;
+
+}
+.catalogue__nav li button:hover:before,
+.catalogue__nav li button:focus:before
+{
+    color: #fb697b;
+    opacity: 1;
+}
+.catalogue__nav li.slick-active button:before
+{
+    
+    display: block;
+    color: #fb697b;
+  
+} 
+.catalogue__nav li button:before
+{     
+    font-size: 14px;
+    font-weight: 600;    
+    background:transparent;   
+    text-align: center;   
+    color: black;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    
+}
+
+.catalogue__nav li:first-child button:before{
+    font-family: 'Montserrat', sans-serif;
+    content: 'Зачем?';
+ }
+ .catalogue__nav li:nth-child(2) button:before{
+    font-family: 'Montserrat', sans-serif;
+    content: 'Что?';
+ }
+ .catalogue__nav li:nth-child(3) button:before{
+    font-family: 'Montserrat', sans-serif;
+    content: 'Как?';
+ }
+
+
+.slick-prev3,
+.slick-next3
+{
+    top: -67px;
+    font-size: 14px;
+    line-height: 0;
+    position: absolute;   
+    display: block;  
+    padding: 0;  
+    color: transparent;
+    border: none;
+    outline: none;    
+    z-index: 10; 
+    width: 30px;
+    height: 20px;
+    background: transparent; 
+}
+
+.slick-prev3:hover,
+.slick-next3:hover
+{
+    cursor: pointer;
+    color: transparent;
+    outline: none;
+    
+}
+.slick-prev3:before,
+.slick-next3:before
+{      
+    font-size: 14px;
+    letter-spacing: 0px;
+    position: absolute;    
+    vertical-align:middle;  
+    color: #000000;
+    font-weight: 600;     
+}
+
+.slick-prev3{     
+   right:  567px;   
+}
+.slick-next3{
+   right: 390px;    
+}
+
+.slick-prev3:before
+{      
+    left: 0px;
+    bottom: 0px;
+    content: '';
+    width: 15px;
+    height: 17px;    
+    position: absolute;
+    background-image: url(../img/ic_keyboard_backspace_black_48px.svg);
+}
+.slick-next3:before
+{
+    right: 0px;
+    content: '';
+    bottom: 1px;  
+    width: 15px;
+    height: 17px;   
+    position: absolute;
+    background-image: url(../img/ic_keyboard_backspace_black_48px.svg);
+    transform: rotate(180deg);
+}
+
+@media (max-width:780px){
+    .catalogue__nav{
+        right: 50px;
+    }
+    .slick-prev3{     
+        right:  230px;   
+    }
+    .slick-next3{
+        right: 45px;    
+    }
+@media (max-width:680px){
+    .catalogue__nav{
+        top: -55px;
+    }
+    .slick-prev3,
+    .slick-next3{
+        top: -40px;
+    }
+}
