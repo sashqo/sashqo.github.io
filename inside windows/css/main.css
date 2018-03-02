@@ -135,11 +135,11 @@ footer .contacts-footer a{font-size:18px;color:white;line-height:18px;position:r
 #scrollBtn{transform:rotate(45deg);display:block;position:absolute;top:-16px;left:0;margin-left:0;width:35px;height:35px;cursor:pointer;border:2px solid #43aa26;background-color:#ffffff;z-index:10;}
 #scrollBg{position:absolute;top:0;left:0;height:3px;background-color:#43aa26;z-index:9;border-radius:6px 0 0 6px;overflow:hidden;}
 #scrollBtn:before{content:"";background-image:url(../img/arrows-video-scroll.png);width:22px;height:12px;position:absolute;z-index:20;transform:rotate(-45deg);top:10px;left:5px;}
-#CDT{font-size:54px;color:#43aa26;margin:0px 0 100px;}
+#CDT{font-size:54px;color:#43aa26;margin:0px 0 100px; display: flex;}
 #CDT .number-wrapper{margin:10px;width:80px;position:relative;}
 #CDT .number{display:inline-block;*display:inline;*zoom:1;width:80px;background:#ffffff;padding:0 12px;height:90px;line-height:80px;text-align:center;}
 #CDT .line{position:absolute;width:100%;top:52%;left:0;background:#000;-moz-box-shadow:0 1px 0 rgba(255, 255, 255, 0.2);-webkit-box-shadow:0 1px 0 rgba(255, 255, 255, 0.2);box-shadow:0 1px 0 rgba(255, 255, 255, 0.2);}
-.caption{font-size:14px;position:absolute;bottom:-10px;left:0;text-align:center;width:100%;color:#000;}
+.caption{font-size:14px;position:absolute;bottom:10px;left:0;text-align:center;width:100%;color:#000;}
 @media (max-width:1200px){.wrapper{justify-content:space-around;}
 .contacts{justify-content:space-around;min-width:100%;padding-bottom:20px;}
 .main-navigation__item{width:50%;}
