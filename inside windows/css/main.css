@@ -168,7 +168,7 @@ footer .contacts-footer a{font-size:18px;color:white;line-height:18px;position:r
 .offer-body{flex-direction:column;}
 #CDT{font-size:32px;}
 #CDT .number{display:inline-block;width:60px;background:#ffffff;padding:0 12px;height:60px;line-height:60px;text-align:center;}
-.caption{bottom:-13px;}
+.caption{bottom:0px; left: -7px;}
 .catalogue-slider__item{margin-top:200px;}
 .popular-product__carousell{margin-left:auto;margin-right:auto;}
 .catalogue-slider{width:95%;margin-left:auto;margin-right:auto;}
