@@ -1,4 +1,4 @@
-function CountdownTimer(elm,tl,mes){
+﻿function CountdownTimer(elm,tl,mes){
  this.initialize.apply(this,arguments);
 }
 CountdownTimer.prototype={
@@ -30,7 +30,7 @@ CountdownTimer.prototype={
 function CDT(){
 
  // Set countdown limit
- var tl = new Date('2018/03/18 00:00:00');
+ var tl = new Date('2018/12/31 00:00:00');
 
  // You can add time's up message here
  var timer = new CountdownTimer('CDT',tl,'<span class="number-wrapper"><div class="line"></div><span class="number end">ВРЕМЯ ВЫШЛО!</span></span>');
