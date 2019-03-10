@@ -147,7 +147,7 @@ footer {
   display: flex; }
   .reviews .rating {
     display: inline-block;
-    background-image: url(../images/rating.svg);
+    background-image: url(../images/rating-stars.svg);
     background-repeat: no-repeat;
     width: 125px;
     height: 20px;
