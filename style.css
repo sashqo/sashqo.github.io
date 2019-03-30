@@ -85,16 +85,15 @@ header {
 	box-shadow: -0.53px 0.848px 2px 0px rgba(0, 0, 0, 0.05);
 }
 
-.hover{	
+.hover{
 	position: absolute;
 	width: 	100%;
-	height: 0%;
+	height: 100%;
 	bottom: 0px;
 	left: 	0px;
+	opacity: 0;
 	overflow: hidden;
-	transition: height 0.2s;
-
-
+	transition: opacity 0.5s;
 }
 .hover__textblock{	
 	color: #ffffff;
@@ -112,6 +111,7 @@ header {
 	font-size: 	18px;
 	text-decoration: underline;	
 	z-index: 301;
+
 }
 .hover__description{
 	font-size: 	14px;
@@ -141,7 +141,7 @@ header {
 }
 
 .portfolio__sitelist li:hover .hover{
- height: 100%
+  opacity: 1;
 }
 
 a {
